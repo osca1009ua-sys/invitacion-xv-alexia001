@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Invitación XV Años</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&display=swap');
+
+/* -------------------------------- */
+/*  CONFIGURACIÓN GENERAL           */
+/* -------------------------------- */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Fondo floral por página */
+.flower-bg {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    background-image: url('01.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* -------------------------------- */
+/*  TARJETA                         */
+/* -------------------------------- */
+.page {
+    width: 92%;
+    max-width: 430px;
+    padding: 35px 28px;
+    background: rgba(255,255,255,0.78);
+    backdrop-filter: blur(12px);
+    border-radius: 30px;
+    border: 10px double #9bd5f5;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 22px rgba(155,213,245,0.6), 0 8px 30px rgba(0,0,0,0.25);
+}
+
+/* Marco dorado interior */
+.page::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 2px solid rgba(255, 215, 0, 0.85);
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* Esquinas doradas */
+.page::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(135deg, gold 0%, transparent 45%) top left,
+        linear-gradient(225deg, gold 0%, transparent 45%) top right,
+        linear-gradient(45deg, gold 0%, transparent 45%) bottom left,
+        linear-gradient(315deg, gold 0%, transparent 45%) bottom right;
+    background-size: 60px 60px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+/* -------------------------------- */
+/*  FOTO                            */
+/* -------------------------------- */
+.foto-marco {
+    width: 88%;
+    max-width: 380px;
+    aspect-ratio: 3/4;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    margin-bottom: 25px;
+}
+
+/* -------------------------------- */
+/*  TÍTULO                          */
+/* -------------------------------- */
+.titulo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 2.9rem;
+    text-align: center;
+    color: #3b3b3b;
+    font-weight: bold;
+    line-height: 1.2;
+    margin-top: 5px;
+}
+
+/* -------------------------------- */
+/*  SEGUNDA PÁGINA                  */
+/* -------------------------------- */
+.pagina2 {
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-size: 1.8rem;
+    line-height: 1.45;
+    color: #333;
+}
+
+.nombres {
+    margin-top: 22px;
+    font-size: 1.9rem;
+}
+
+/* -------------------------------- */
+/*  BOTONES                         */
+/* -------------------------------- */
+.botones {
+    margin-top: 32px;
+    width: 80%;
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.btn {
+    text-decoration: none;
+    background: linear-gradient(135deg, #87CEEB, #a7d8f7);
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: .3s;
+}
+
+.btn:hover {
+    transform: scale(1.03);
+    background: linear-gradient(135deg, #6bbad8, #8fc9eb);
+}
+
+/* -------------------------------- */
+/*  AJUSTES ESPECIALES PARA CELULAR*/
+/* -------------------------------- */
+@media (max-width: 480px) {
+
+    .titulo {
+        font-size: 2.4rem;
+    }
+
+    .pagina2 {
+        font-size: 1.6rem;
+    }
+
+    .nombres {
+        font-size: 1.7rem;
+    }
+
+    .page {
+        padding: 28px 22px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- PÁGINA 1 -->
+<div class="flower-bg">
+    <div class="page">
+
+        <!-- FOTO -->
+        <div class="foto-marco" style="background-image: url('ale.jpeg');"></div>
+
+        <div class="titulo">
+            Mis XV Años <br>
+            Alexia Giovanna Solis Castillo
+        </div>
+
+    </div>
+</div>
+
+<!-- PÁGINA 2 -->
+<div class="flower-bg">
+    <div class="page pagina2">
+
+        <p>
+            “Un día tan especial merece ser compartido con  
+            quienes llenan mi vida de alegría y hermosos recuerdos.”
+        </p>
+
+        <div class="nombres">
+            Con cariño de mis padres:<br>
+            Cristia Giovanny Solis López<br>
+            María Soledad López Calderón<br><br>
+            Y de mi Madrina:<br>
+            Estela Guadalupe Solis López
+        </div>
+
+        <div class="botones">
+            <a href="https://www.google.com/maps/place/Parroquia+de+San+Mart%C3%ADn+de+Porres/@19.3681373,-98.9778749,1077m/data=!3m1!1e3!4m14!1m7!3m6!1s0x85d1e291b6b77ccb:0xa0767dc06ab4e695!2sAUDITORIO+MUNICIPAL+%22Los+Reyes+La+Paz%22!8m2!3d19.3618679!4d-98.981275!16s%2Fg%2F1hd_2gv64!3m5!1s0x85d1e28c8ef54329:0xd735aad8d87b3d7!8m2!3d19.3681323!4d-98.9753!16s%2Fg%2F11bwpnt2_d?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn">Iglesia</a>
+             <p>5:30 pm</p>
+            <a href="https://www.google.com/maps/place/Auditorio+Ejidal+Atlapulco+Ciudad+Nezahualcoyotl/@19.3834737,-98.9808307,1077m/data=!3m2!1e3!4b1!4m6!3m5!1s0x85d1e3cc27c12af7:0x23b796dd319f0b48!8m2!3d19.3834687!4d-98.9782558!16s%2Fg%2F11h0zfz_pv?entry=ttu&g_ep=EgoyMDI1MTEyMy4xIKXMDSoASAFQAw%3D%3D" class="btn">Recepción</a>
+            <p>7:00 pm</p>
+            <a href="https://wa.me/525540890200?text=Confirmo%20boletos" class="btn">Confirmar Asistencia</a>
+          
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
